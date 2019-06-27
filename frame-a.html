@@ -10,6 +10,7 @@
     <h1>Lego Star Wars gallery</h1>
     <script>
     function makeRequestWithUserGesture() {
+      console.log(window.localStorage.getItem("foo"));
       var promise = document.requestStorageAccess();
       promise.then(
         function () {
