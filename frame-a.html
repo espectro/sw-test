@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
   </head>
-
   <body>
     <h1>Star Wars</h1>
     <script>
-    function makeRequestWithUserGesture() {
+    function getFoo() {
       console.log(window.localStorage.getItem("foo"));
     }
+    function setFoo() {
+      window.localStorage.setItem("foo", "bar");
+    }
     </script>
-    <button onclick="makeRequestWithUserGesture()">Play video</button>
-
+    <button onclick="getFoo()">Get</button>
+    <button onclick="setFoo()">Set</button>
   </body>
 </html>
