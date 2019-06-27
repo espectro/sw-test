@@ -11,15 +11,6 @@
     <script>
     function makeRequestWithUserGesture() {
       console.log(window.localStorage.getItem("foo"));
-      var promise = document.requestStorageAccess();
-      promise.then(
-        function () {
-          console.log("Storage access was granted.")
-        },
-        function () {
-          console.log("Storage access was denied.")
-        }
-      );
     }
     </script>
     <button onclick="makeRequestWithUserGesture()">Play video</button>
